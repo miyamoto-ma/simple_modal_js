@@ -33,7 +33,7 @@
             const window_h = window.innerHeight;
 
             // とりあえず高さの90％のサイズで画像を収めるようにする
-            img_wrap.style.height = window_h * 0.9 + 'px';
+            img_wrap.style.height = window_h * 0.8 + 'px';
             img_wrap.style.width = 'auto';
             modal_img.style.height = 100 + '%';
             modal_img.style.width = 'auto';
