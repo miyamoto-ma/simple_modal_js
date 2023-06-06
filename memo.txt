@@ -13,7 +13,7 @@ cd OneDrive/デスクトップ/mymodal
 
 GitHubでレポジトリを作成するときにREADME.mdやライセンスを追加すると、
 ローカルで作ったレポジトリをそこへpushするときにエラーが出る
-	git pull --allow-unrelated-histories origin master
+	git pull --allow-unrelated-histories origin main
 
 あとは
 	git push origin main
