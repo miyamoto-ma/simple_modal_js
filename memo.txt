@@ -1,3 +1,26 @@
 【MyModal】
 
 cd OneDrive/デスクトップ/mymodal
+
+
+ローカルとgithubの関連付け
+	git remote add origin url名
+		git remote add origin https://github.com/miyamoto-ma/simple_modal_js.git
+
+アップロード
+	git push origin master
+
+
+GitHubでレポジトリを作成するときにREADME.mdやライセンスを追加すると、
+ローカルで作ったレポジトリをそこへpushするときにエラーが出る
+	git pull --allow-unrelated-histories origin master
+
+あとは
+	git push origin main
+
+
+
+
+
+
+
