@@ -1,6 +1,12 @@
 @charset 'utf-8';
 
-/* モーダル用 */
+/* モーダル時用css画像（モーダルにはこれを適用する） */
+
+/* モーダル時のHTML */
+html.modal_html {
+    overflow-y: hidden;
+}
+/* モーダル全体 */
 .modal {
     position: relative;
 }

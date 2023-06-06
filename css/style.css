@@ -1,6 +1,16 @@
 @charset 'utf-8';
 
-/* 通常の表示 */
+/* 通常のcss（モーダル前ユーザーが自分で設定する部分） */
+main {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:2%;
+    row-gap:35px;
+}
+
 .user_style {
-    width: 500px;
+    width: 32%;
+    box-sizing: border-box;
 }

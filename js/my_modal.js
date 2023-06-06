@@ -1,6 +1,6 @@
 'use strict';
 {
-    let modals = document.querySelectorAll('.modal');
+    const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
         // 閉じるボタン
         const modal_btn = document.createElement('p');
@@ -24,10 +24,13 @@
         const o_img_width = modal_img.clientWidth;
         const o_img_height = modal_img.clientHeight;
 
+        // HTML要素の取得
+        const html = document.querySelector('html');
+
         // モーダルを開く
         modal_img.addEventListener('click', () => {
-            let window_w = window.innerWidth;
-            let window_h = window.innerHeight;
+            const window_w = window.innerWidth;
+            const window_h = window.innerHeight;
 
             // とりあえず高さの90％のサイズで画像を収めるようにする
             img_wrap.style.height = window_h * 0.9 + 'px';
@@ -42,6 +45,7 @@
                 modal_img.style.width = 100 + '%';
             }
             modal.classList.add('active');
+            html.classList.add('modal_html');
         });
 
         // モーダルを閉じる（閉じるボタンより））
@@ -52,6 +56,7 @@
             modal_img.style.width =  100 + '%';
 
             modal.classList.remove('active');
+            html.classList.remove('modal_html');
         });
         // モーダルを閉じる（背景より）
         modal_back.addEventListener('click', () => {
@@ -61,6 +66,7 @@
             modal_img.style.width =  o_img_width + 'px';
 
             modal.classList.remove('active');
+            html.classList.remove('modal_html');
         });
     });
 }
