@@ -18,9 +18,3 @@ GitHubでレポジトリを作成するときにREADME.mdやライセンスを�
 あとは
 	git push origin main
 
-
-
-
-
-
-

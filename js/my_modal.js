@@ -37,8 +37,9 @@
             img_wrap.style.width = 'auto';
             modal_img.style.height = 100 + '%';
             modal_img.style.width = 'auto';
+            const o_img_width_2 = modal_img.clientWidth;
             // その状態で画像がウィンドウの横幅を超えるなら再調整
-            if (modal_img.clientWidth > window_w) {
+            if (o_img_width_2 > window_w) {
                 img_wrap.style.height = 'auto';
                 img_wrap.style.width = window_w * 0.9 + 'px';
                 modal_img.style.height = 'auto';
@@ -51,7 +52,7 @@
         // モーダルを閉じる（閉じるボタンより））
         modal_btn.addEventListener('click', () => {
             img_wrap.style.height = 'auto';
-            img_wrap.style.width = 100 + '%';
+            img_wrap.style.width = 'auto';
             modal_img.style.height = 'auto';
             modal_img.style.width =  100 + '%';
 
@@ -61,9 +62,9 @@
         // モーダルを閉じる（背景より）
         modal_back.addEventListener('click', () => {
             img_wrap.style.height = 'auto';
-            img_wrap.style.width = 100 + '%';
-            modal_img.style.height = o_img_height + 'px';
-            modal_img.style.width =  o_img_width + 'px';
+            img_wrap.style.width = 'auto';
+            modal_img.style.height = 'auto';
+            modal_img.style.width =  100 + '%';
 
             modal.classList.remove('active');
             html.classList.remove('modal_html');
